@@ -1,0 +1,37 @@
+{
+    "name": "foxphp/event-dispatcher",
+    "description": "A simple event dispatcher in PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Author",
+            "name": "Steve McDougall",
+            "email": "juststevemcd@gmail.com",
+            "homepage": "https://www.juststeveking.uk/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FoxPHP\\EventDispatcher\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FoxPHP\\EventDispatcher\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^4.8"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
