@@ -25,7 +25,14 @@
         "php": "^8.0"
     },
     "require-dev": {
+        "pestphp/pest": "^1.7",
+        "spatie/ray": "^1.26",
         "vimeo/psalm": "^4.8"
+    },
+    "scripts": {
+        "analyze": "./vendor/bin/psalm --show-info=true",
+        "test": "./vendor/bin/pest",
+        "test-coverage": "./vendor/bin/pest --coverage"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
